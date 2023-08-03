@@ -1,3 +1,46 @@
-.h1 {
-    color: green;
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.container_aboutMe {
+    width: 600px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+}
+.profile {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_pic {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #00BFFF;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.user_desc {
+    font-style: italic;
+    color: rgb(48, 48, 48);
+    margin-bottom: 25px;
+}
+.about_me {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+    border-top: 2px solid #00BFFF;
+    border-bottom: 2px solid #00BFFF;
+    color: rgb(48, 48, 48);
 }
