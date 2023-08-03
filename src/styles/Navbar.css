@@ -1,0 +1,45 @@
+/* general Navbar styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #00BFFF;
+}
+/* list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: white;
+}
+/* indv nav bar styles */
+.nav-item {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    /* for mouse hover */
+    transition: transform 0.2s;
+    /* for item line */
+    position: relative;
+}
+/* scales up the item */
+.nav-item:hover {
+    transform: scale(1.1);
+    color: #caf2ff;
+}
+/* item line styles */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #caf2ff;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+.nav-item:hover::after {
+    transform: scaleX(1);
+}
