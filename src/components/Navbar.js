@@ -6,10 +6,10 @@ export default function Navbar({ onNavClick }) {
     return (
         <nav>
             <ul>
-                <li className="nav-item" onClick={() => onNavClick('page1')}>Page 1</li>
-                <li className="nav-item" onClick={() => onNavClick('page2')}>Page 2</li>
-                <li className="nav-item" onClick={() => onNavClick('page3')}>Page 3</li>
-                <li className="nav-item" onClick={() => onNavClick('page4')}>Page 4</li>
+                <li className="nav-item" onClick={() => onNavClick('about')}>About Me</li>
+                <li className="nav-item" onClick={() => onNavClick('portfolio')}>Portfolio</li>
+                <li className="nav-item" onClick={() => onNavClick('contact')}>Contact</li>
+                <li className="nav-item" onClick={() => onNavClick('resume')}>Resume</li>
             </ul>
         </nav>
     );

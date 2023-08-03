@@ -1,28 +1,28 @@
 import React from 'react';
 // Different Page content
 import Navbar from './components/Navbar';
-import Page1 from './components/Page1'; 
-import Page2 from './components/Page2';
-import Page3 from './components/Page3';
-import Page4 from './components/Page4';
+import About from './components/About'; 
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = React.useState('page1');
+  const [currentPage, setCurrentPage] = React.useState('about');
 
   function handleNavClick(page) {
     setCurrentPage(page);
   }
 
   let content;
-  if (currentPage === 'page1') {
-      content = <Page1 />;
-  } else if (currentPage === 'page2') {
-      content = <Page2 />;
-  } else if (currentPage === 'page3') {
-      content = <Page3 />;
-  } else if (currentPage === 'page4') {
-      content = <Page4 />;
+  if (currentPage === 'about') {
+      content = <About />;
+  } else if (currentPage === 'portfolio') {
+      content = <Portfolio />;
+  } else if (currentPage === 'contact') {
+      content = <Contact />;
+  } else if (currentPage === 'resume') {
+      content = <Resume />;
   }
   return (
     <div>
